@@ -6,6 +6,8 @@
 //     Faculty : 'CSIT'
 // };
 
+const { Console } = require("console");
+
 
 // const arr = ['Sandip', 1, 'CSIT'];
 // const copiedArr = arr.slice();
@@ -23,15 +25,40 @@
 
 
 
-const obj ={
-    Name : 'Sandip Bajagain',
-    Sem: 1,
-    Faculty : 'CSIT'
-};
+// const obj ={
+//     Name : 'Sandip Bajagain',
+//     Sem: 1,
+//     Faculty : 'CSIT'
+// };
 
 
-const printName =({Name, 
-    Sem})=>{
-     console.log('Name is :' , Name, '\n and currently in sem: ',Sem);
+// const printName =({Name, 
+//     Sem})=>{
+//      console.log('Name is :' , Name, '\n and currently in sem: ',Sem);
+// }
+// printName(obj);
+
+
+
+
+//Time out
+let data = hello =>{
+    setTimeout(() => {
+       hello ('Done!')
+        console.log("Hello \nHi!")
+    }, 1500);
 }
-printName(obj);
+
+
+
+setTimeout(()=>{
+
+    console.log("Time is up");
+
+    data((fetecheddata)=>{
+
+        console.log(fetecheddata)
+    });
+}, 3);
+
+console.log("This will print first")
