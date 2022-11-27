@@ -1,6 +1,7 @@
 const http = require('http');
 let filesystem = require('fs');
 const { buffer } = require('stream/consumers');
+const { parse } = require('path');
 
 
 const server = http.createServer((req, res) => {
@@ -35,7 +36,7 @@ const server = http.createServer((req, res) => {
             console.log(parsedValue);
             // const message = parsedValue.split('=')[1];
 
-            filesystem.writeFileSync('file.txt', 'message');
+            filesystem.writeFileSync('file.txt', parsedValue);
             
         });
        console.log('hello print vayena :(');
