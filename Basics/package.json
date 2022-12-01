@@ -1,0 +1,11 @@
+{
+  "name": "basics",
+  "version": "1.0.0",
+  "description": "This is a node app and I am learning Node js RN.",
+  "main": "app.js",
+  "scripts": {
+    "test": "hello"
+  },
+  "author": "Sandip Bajagain",
+  "license": "ISC"
+}
