@@ -4,8 +4,12 @@
   "description": "This is a node app and I am learning Node js RN.",
   "main": "app.js",
   "scripts": {
-    "test": "hello"
+    "test": "hello",
+    "start": "node app.js"
   },
   "author": "Sandip Bajagain",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "nodemon": "^2.0.20"
+  }
 }
