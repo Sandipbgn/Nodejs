@@ -25,10 +25,10 @@ const baatohandler = (req, res) => {
 
         req.on('end', () => {
             const parsedValue = Buffer.concat(bodyofbox).toString()
-
+            const message = parsedValue.split('=')[1];
             console.log(parsedValue)
-            // const message = parsedValue.split('=')[1];
-            filesystem.writeFileSync('file.txt', parsedValue)
+            // 
+            filesystem.writeFileSync('file.txt', message)
 
         })
         console.log('hello print vayena :(')
